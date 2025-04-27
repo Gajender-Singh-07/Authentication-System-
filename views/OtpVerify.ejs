@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("Links.ejs") -%>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="row my-5"></div>
+                    <form action="/changePassword" method="post">
+                     
+                      <h1 class="h3 mb-3 fw-normal text-center text-light">Otp Verification</h1>
+                        <input type="hidden" value="<%- id %>" name="id">
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="otp">
+                        <label for="floatingInput">Enter otp here ...</label>
+                      </div>
+                      <button class="btn btn-danger w-100 py-2" type="submit">Verify</button>
+                    </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</body>
+</html>

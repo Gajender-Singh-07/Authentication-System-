@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("Links.ejs") -%>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="row my-5"></div>
+                    <form action="/login" method="post">
+                     
+                      <h1 class="h3 mb-3 fw-normal text-center text-light">Sign in</h1>
+                  
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="Email">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                  
+                      <div class="form-check text-start my-3">
+                        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                        <label class="form-check-label text-light" for="flexCheckDefault">
+                          Remember me
+                        </label>
+                      </div>
+                      <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                      <div class="row">
+                        <div class="col-sm-6">
+                            <h6 class="text-start mt-3"><a href="/emailVerify" class="text-light text-decoration-none">Forgot password</a></h6>
+                        </div>
+                        <div class="col-sm-6">
+                            <h6 class="text-end mt-3"><a href="/signUp" class="text-light text-decoration-none">New user?</a></h6>
+                        </div>
+                      </div>
+                    </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("Links.ejs") -%>
+</head>
+<body class="bg-dark">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="row my-5"></div>
+                    <form action="/register" method="post">
+                     
+                      <h1 class="h3 mb-3 fw-normal text-center text-light">Sign up</h1>
+                  
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="Username">
+                        <label for="floatingInput">Username</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"  name="Email">
+                        <label for="floatingInput">Email address</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"  name="Password">
+                        <label for="floatingPassword">Password</label>
+                      </div>
+                  
+                     
+                      <button class="btn btn-warning w-100 py-2 mt-3" type="submit">Sign up</button>
+                      <h6 class="text-end mt-3"><a href="/" class="text-light text-decoration-none">Sign in</a></h6>
+                    </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</body>
+</html>
