@@ -70,7 +70,6 @@ Visit `http://localhost:3000` in your browser.
 
 To send OTP emails via Gmail:
 - Configure your Gmail in `index.js` inside the `nodemailer.createTransport` block.
-- Enable "less secure apps" or use an **App Password** if using 2FA.
 
 ---
 
